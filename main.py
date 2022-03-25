@@ -13,24 +13,9 @@ def calc():
 
 @app.route('/unifran')
 def unifran():
-    return <h2>Universidade de Franca</h2>
+    return render_template('unifran.html')
 
-
-
-  if operador == '+':
-    resultado = float(num1) + float(num2)
-    
-  if operador == '-':
-    resultado = float(num1) - float(num2)
-
-  if operador == '*':
-    resultado = float(num1) * float(num2)
-  
-  if operador == '/':
-    resultado = float(num1) / float(num2)
-    
  
-  return f'{resultado}' 
   
   
 if __name__ == '__main__':
