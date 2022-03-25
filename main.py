@@ -11,6 +11,10 @@ def calc():
   num2 = request.form.get('num2')
   operador = request.form.get('operador')
 
+@app.route(‘/unifran’)
+def unifran():
+    return ‘<h2>Universidade de Franca</h2>’
+
   if operador == '+':
     resultado = float(num1) + float(num2)
     
