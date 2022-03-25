@@ -3,33 +3,11 @@ app = Flask('app')
 
 @app.route('/')
 def index():
-  return render_template('index.html')
-
-@app.route('/calc', methods=['POST'])
-def calc():
-  num1 = request.form.get('num1')
-  num2 = request.form.get('num2')
-  operador = request.form.get('operador')
-
-@app.route(‘/unifran’)
+ return '<h1>Olá Mundo!</h1>'
+  
+@app.route('/unifran')
 def unifran():
-    return ‘<h2>Universidade de Franca</h2>’
-
-  if operador == '+':
-    resultado = float(num1) + float(num2)
-    
-  if operador == '-':
-    resultado = float(num1) - float(num2)
-
-  if operador == '*':
-    resultado = float(num1) * float(num2)
-  
-  if operador == '/':
-    resultado = float(num1) / float(num2)
-    
- 
-  return f'{resultado}' 
-  
+ return '<h2>Pagina Hello</h2>'
   
 if __name__ == '__main__':
   app.run(host='0.0.0.0', port=8080)
